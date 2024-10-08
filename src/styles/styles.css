@@ -1,0 +1,173 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #67b26f, #4ca2cd); /* Gradient background */
+  }
+  
+  /* Container for the image and form */
+  .main-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Styling for the left image section */
+  .image-container {
+    flex: 1;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* Right form section */
+  .form-container {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white; /* White background for the form section */
+  }
+  
+  h1.app-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Centering and styling for text */
+  p {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Link styling */
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional styling for the Sign Up and Sign In text */
+  .signup-container h2, .login-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+  }
+  
+  /* Modules Section */
+  .modules-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .module-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 120px; /* Fixed width for square boxes */
+    height: 120px; /* Fixed height to match width */
+    display: flex; /* Center the text */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .module-box:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }
+  
+  /* Responsive adjustments for modules */
+  @media (max-width: 800px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      display: none; /* Hides the image on smaller screens for better layout */
+    }
+  
+    .form-container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    h1.app-title {
+      font-size: 24px;
+    }
+  
+    .module-box {
+      flex: 1 1 calc(50% - 20px); /* Two boxes per row on smaller screens */
+      width: 100px; /* Adjust width for smaller screens */
+      height: 100px; /* Adjust height to match */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .module-box {
+      width: 80px; /* Further reduce size for extra small screens */
+      height: 80px; /* Maintain square aspect ratio */
+    }
+  }
+  
