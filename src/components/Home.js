@@ -15,15 +15,16 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1>Hello there, nat.</h1>
-      <p>Quote Of The Day</p>
-      <div className="quote-box">
-        <p>Cyberbullying is the biggest online concern, already affecting up to 35% of all children.</p>
-      </div>
+      <h1>Hello there, user.</h1>
+      <div class="quote-container">
+        <p class="quote-author">Quote Of The Day</p>
+        <p class="quote-text">"The best defense against cyber threats is a well-informed user."</p>
+        </div>
       <div className="overview">
         <h3>Where were we?</h3>
         <button className="resume-button">Resume</button>
       </div>
+
 
       {/* Modules Section */}
       <h2>Modules</h2>
@@ -42,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home;

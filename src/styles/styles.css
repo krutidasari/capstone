@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #67b26f, #4ca2cd); /* Gradient background */
+  background-color:rgb(219, 199, 211); /* Gradient background */
 }
 
 /* Container for the image and form */
@@ -54,7 +54,7 @@ body {
 
 h1.app-title {
   text-align: center;
-  color: #e9efea;
+  color: #131413;
   font-size: 50px;
   margin-bottom: 30px;
   font-weight: bold;
@@ -90,7 +90,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin-top: 15px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
@@ -113,6 +113,35 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Styling for the quote section */
+.quote-container {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #e0f7fa; /* Light background for contrast */
+  border-left: 5px solid #00796b; /* Accent color border */
+  border-radius: 20px;
+  font-style: italic;
+  color: #004d40; /* Darker shade for the quote text */
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.quote-container:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+.quote-text {
+  margin: 0;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00796b;
+  font-size: 18px;
+}
 /* Modules Section */
 .modules-container {
   display: flex;
@@ -123,7 +152,7 @@ a:hover {
 
 /* Adjusted module-box to be squares and responsive */
 .module-box {
-  background-color: #eff3ef;
+  background-color: #f28fbd;
   color: rgb(3, 0, 0);
   padding: 20px;
   margin: 10px;
@@ -139,48 +168,71 @@ a:hover {
 }
 
 .module-box:hover {
-  background-color: #45a045; /* Darker shade on hover */
+  background-color: #a13773; /* Darker shade on hover */
 }
 
-/* Articles container and quiz button section */
-.articles-container {
-  margin-top: 40px;
+.modules-container2 {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: left;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.article-link {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+/* Articles section */
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.article-item {
+  padding: 15px;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  text-decoration: none;
-  margin: 10px 0;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
-.article-link:hover {
-  background-color: #45a049;
+.article-item:hover {
+  background-color: #e0e0e0;
+}
+
+.article-item a {
+  color: #333333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.article-item a:hover {
+  text-decoration: underline;
 }
 
 /* Quiz button styling */
 .quiz-button {
-  background-color: #30ab3e;
+  background-color: #4CAF50;
   color: white;
   padding: 15px 30px;
   border-radius: 8px;
   font-size: 18px;
-  margin-top: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  bottom: 200px;
- 
+  border: none;
+  margin-top: 20px;
 }
 
 .quiz-button:hover {
-  background-color: #0056b3;
+  background-color: #388E3C;
 }
+
+
 
 /* Responsive adjustments for modules */
 @media (max-width: 800px) {
@@ -212,5 +264,103 @@ a:hover {
   .module-box {
     width: 80px;
     height: 80px;
+  }
+}
+/* Container for the quiz */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  overflow-y: auto; /* Enable scrolling if needed */
+  max-height: 80vh; /* Prevent overflow on smaller screens */
+}
+
+/* Heading styling */
+.quiz-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Individual question styling */
+.quiz-question {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-question p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Options styling */
+.quiz-question label {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.quiz-question label:hover {
+  background-color: #f0f8ff;
+  border-color: #30ab3e;
+}
+
+.quiz-question input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit button styling */
+.submit-button {
+  padding: 12px 24px;
+  background-color: #30ab3e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #2d9a37;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .quiz-container {
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+  }
+
+  .quiz-container h2 {
+    font-size: 20px;
+  }
+
+  .quiz-question {
+    padding: 10px;
   }
 }
