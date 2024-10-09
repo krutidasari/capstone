@@ -7,11 +7,11 @@ const Quiz = () => {
   
   // Dummy quiz questions (expand as needed)
   const questions = [
-    { question: 'Question 1?', options: ['Option A', 'Option B', 'Option C'], answer: 'Option A' },
-    { question: 'Question 2?', options: ['Option A', 'Option B', 'Option C'], answer: 'Option B' },
-    { question: 'Question 3?', options: ['Option A', 'Option B', 'Option C'], answer: 'Option C' },
-    { question: 'Question 4?', options: ['Option A', 'Option B', 'Option C'], answer: 'Option A' },
-    { question: 'Question 5?', options: ['Option A', 'Option B', 'Option C'], answer: 'Option C' },
+    { question: 'What does a Vpn help with securing apps?', options: ['Reduces app performance', 'Encrypts traffic', 'Restricts user RBAC'], answer: 'Encrypts traffic' },
+    { question: 'What is the purpose of OAuth in API Security?', options: ['Grant access without sharing credentials', 'Prevent data loss', 'Speeden API response'], answer: 'Grant access without sharing credentials' },
+    { question: 'What is network segmentation help prevent?', options: ['Spreading malware', 'Faster data transfer', 'High performance'], answer: 'Spreading malware' },
+    { question: 'What is the purpose of Firewall?', options: ['Block unautherised access', 'Reduce bandwidth', 'Log activity'], answer: 'Block unautherised access' },
+    { question: 'Which type of attack does encryption help mitigate?', options: ['MITM', 'DoS', 'SQL Injection'], answer: 'MITM' },
   ];
 
   const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(null));

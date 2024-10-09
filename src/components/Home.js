@@ -7,10 +7,10 @@ const Home = () => {
 
   // Dummy module topics, replace with your actual module names and paths
   const modules = [
-    { name: 'Module 1: Introduction to Cyber Hygiene', path: '/module/1' },
-    { name: 'Module 2: Identifying Cyber Threats', path: '/module/2' },
-    { name: 'Module 3: Protecting Personal Information', path: '/module/3' },
-    { name: 'Module 4: Best Practices for Online Safety', path: '/module/4' },
+    { name: 'Module 1: Authentication and Access Control', path: '/module/1' },
+    { name: 'Module 2: Data Protection', path: '/module/2' },
+    { name: 'Module 3: Secure Development Practices', path: '/module/3' },
+    { name: 'Module 4: Network Security', path: '/module/4' },
   ];
 
   return (
