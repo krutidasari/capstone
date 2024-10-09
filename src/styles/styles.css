@@ -8,7 +8,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:rgb(219, 199, 211); /* Gradient background */
+  background-image: linear-gradient(rgb(238, 214, 240), rgb(205, 73, 201));
+
 }
 
 /* Container for the image and form */
@@ -17,7 +18,7 @@ body {
   flex-wrap: wrap;
   width: 80%;
   max-width: 1200px;
-  background-color: white;
+  background-color: rgb(247, 237, 247);
   border-radius: 12px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -118,11 +119,11 @@ a:hover {
   text-align: center;
   margin: 20px 0;
   padding: 20px;
-  background-color: #e0f7fa; /* Light background for contrast */
-  border-left: 5px solid #00796b; /* Accent color border */
+  background-color: #eff4f5; /* Light background for contrast */
+  border-left: 5px solid #a60ae3; /* Accent color border */
   border-radius: 20px;
   font-style: italic;
-  color: #004d40; /* Darker shade for the quote text */
+  color: #062823; /* Darker shade for the quote text */
   font-size: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
@@ -139,7 +140,7 @@ a:hover {
 .quote-author {
   margin-top: 10px;
   font-weight: bold;
-  color: #00796b;
+  color: #17011a;
   font-size: 18px;
 }
 /* Modules Section */
@@ -152,7 +153,7 @@ a:hover {
 
 /* Adjusted module-box to be squares and responsive */
 .module-box {
-  background-color: #f28fbd;
+  background-color: #f0e5f3;
   color: rgb(3, 0, 0);
   padding: 20px;
   margin: 10px;
@@ -168,7 +169,7 @@ a:hover {
 }
 
 .module-box:hover {
-  background-color: #a13773; /* Darker shade on hover */
+  background-color: #efb6e9; /* Darker shade on hover */
 }
 
 .modules-container2 {
